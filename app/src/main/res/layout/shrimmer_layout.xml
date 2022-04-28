@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="20dp">
+
+    <View
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/placeholderImage"
+        android:layout_height="@dimen/placeholderImage"
+        android:layout_marginStart="@dimen/activityPadding"
+        android:layout_marginTop="@dimen/padding_10"
+        android:background="@color/background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/viewText"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/placeholderTextHeight"
+        android:layout_marginStart="@dimen/activityPadding"
+        android:layout_marginTop="@dimen/padding_10"
+        android:background="@color/background"
+        app:layout_constraintLeft_toRightOf="@id/thumbnail"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="@dimen/placeholderTextHeight"
+        android:layout_marginStart="@dimen/activityPadding"
+        android:layout_marginTop="@dimen/padding_10"
+        android:background="@color/background"
+        app:layout_constraintLeft_toRightOf="@id/thumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/viewText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
